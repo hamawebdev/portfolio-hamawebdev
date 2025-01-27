@@ -53,7 +53,7 @@ export function Hero() {
           <Link href="https://github.com/hamawebdev" target="_blank" rel="noopener noreferrer">
             <Github className="w-8 h-8 text-gray-300 hover:text-blue-500 transition-colors" />
           </Link>
-          <Link href="https://linkedin.com/in/hamawebdev" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com/in/hamadouche-ayoub-380735336" target="_blank" rel="noopener noreferrer">
             <Linkedin className="w-8 h-8 text-gray-300 hover:text-blue-500 transition-colors" />
           </Link>
         </motion.div>

@@ -25,19 +25,19 @@ const achievements = [
   {
     id: 4,
     title: 'Research Assistant',
-    description: 'Assisted in cutting-edge research on quantum computing algorithms',
+    description: 'Assisted in cutting-edge research on Ai and deep learning',
     icon: <Microscope className="w-6 h-6" />,
   },
   {
     id: 5,
     title: 'Freelance Developer',
-    description: 'Started freelancing in 2024, specializing in web and mobile app development',
+    description: 'Started freelancing in 2024, specializing in web development',
     icon: <Code className="w-6 h-6" />,
   },
   {
     id: 6,
     title: 'Open Source Contributor',
-    description: 'Active contributor to popular open-source projects, including React and TensorFlow',
+    description: 'Active contributor to popular open-source projects',
     icon: <Github className="w-6 h-6" />,
   },
 ]

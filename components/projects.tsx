@@ -26,7 +26,7 @@ const projects = [
   { 
     id: 3, 
     title: 'iPhone 15 Pro site', 
-    description: 'Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. From custom animations to animated 3D models, this tutorial covers it all.', 
+    description: 'Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.', 
     image: '/preview3.png',
     previewUrl: 'https://iphone-doc.vercel.app/',
     githubUrl: 'https://github.com/hamawebdev/iphone'

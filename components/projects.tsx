@@ -9,27 +9,27 @@ import { Eye, Github } from 'lucide-react'
 const projects = [
   { 
     id: 1, 
-    title: 'Project 1', 
-    description: 'Description for Project 1', 
-    image: '/placeholder.svg',
-    previewUrl: 'https://project1-preview.com',
-    githubUrl: 'https://github.com/yourusername/project1'
+    title: 'Infinity Club Site', 
+    description: 'The Infinity Club Site is a web application developed to provide a seamless experience for club members and visitors.', 
+    image: '/preview1.png',
+    previewUrl: 'https://infinity-club-bba.vercel.app/',
+    githubUrl: 'https://github.com/hamawebdev/infinity-club-site'
   },
   { 
     id: 2, 
-    title: 'Project 2', 
-    description: 'Description for Project 2', 
-    image: '/placeholder.svg',
-    previewUrl: 'https://project2-preview.com',
-    githubUrl: 'https://github.com/yourusername/project2'
+    title: 'Brainwave Site', 
+    description: 'The most impressive websites in the world use 3D graphics and animations to bring their content to life.', 
+    image: '/preview2.png',
+    previewUrl: 'https://jsm-brainwave.com/',
+    githubUrl: 'https://github.com/hamawebdev/brainwave'
   },
   { 
     id: 3, 
-    title: 'Project 3', 
-    description: 'Description for Project 3', 
-    image: '/placeholder.svg',
-    previewUrl: 'https://project3-preview.com',
-    githubUrl: 'https://github.com/yourusername/project3'
+    title: 'iPhone 15 Pro site', 
+    description: 'Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. From custom animations to animated 3D models, this tutorial covers it all.', 
+    image: '/preview3.png',
+    previewUrl: 'https://iphone-doc.vercel.app/',
+    githubUrl: 'https://github.com/hamawebdev/iphone'
   },
 ]
 

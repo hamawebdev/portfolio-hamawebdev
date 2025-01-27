@@ -42,6 +42,11 @@ const achievements = [
   },
 ]
 
+
+const handleDownload = () => {
+  window.open("https://drive.google.com/file/d/1PdjoRK_w9jY0YMbHp6b4Go3caNezLnT8/view?usp=sharing");
+};
+
 export function AcademicShowcase() {
   return (
     <section id="achievements" className="py-20"> {/* Removed background color */}
@@ -74,13 +79,17 @@ export function AcademicShowcase() {
         <p className="text-lg text-gray-300 mb-6">
           As a passionate Computer Science student and budding freelancer, I'm constantly pushing the boundaries of what's possible in tech. My academic excellence, combined with hands-on project experience, positions me uniquely in the world of software development.
         </p>
+        
+
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-gradient-to-l transition-colors"
+          onClick={handleDownload}
         >
-          View My Projects
+         Download Resume
         </motion.button>
+        
       </motion.div>
     </section>
   )

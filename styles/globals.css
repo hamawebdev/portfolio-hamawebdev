@@ -2,13 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font variables are defined in layout.tsx and available through CSS variables */
+
+/* Font classes for easy usage */
+.font-heading {
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+.font-subheading {
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-poppins), system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-fira-code), monospace;
+}
+
+/* Default body font */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), system-ui, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .stroke-1 {
+    -webkit-text-stroke-width: 1px;
+    text-stroke-width: 1px;
+  }
+
+  .stroke-2 {
+    -webkit-text-stroke-width: 2px;
+    text-stroke-width: 2px;
+  }
+
+  .paint-order-stroke {
+    paint-order: stroke fill;
+  }
+
+  /* Font styling utilities */
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-xl {
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+
+  /* Letter spacing utilities */
+  .tracking-tighter-2 {
+    letter-spacing: -0.1em;
+  }
+
+  .tracking-wider-2 {
+    letter-spacing: 0.1em;
   }
 }
 

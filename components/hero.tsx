@@ -15,13 +15,13 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-8"
         >
-          
+
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold mb-4"
+          className="text-5xl md:text-7xl font-bold mb-4 font-heading tracking-tight text-shadow-lg"
         >
           Hi, I'm <span className="text-blue-500">Ayoub.</span>
         </motion.h1>
@@ -29,16 +29,16 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="text-2xl mb-8"
+          className="text-2xl md:text-3xl mb-8 font-subheading tracking-wide"
         >
           <TypeAnimation
             sequence={[
               'Frontend Developer',
-              2000,
+              1000,
               'Backend Developer',
-              2000,
-               'CyberSecurity passionate!',
-              2000,
+              1000,
+               'Ai Automation Developer',
+              1000,
             ]}
             wrapper="span"
             repeat={Infinity}
@@ -61,7 +61,7 @@ export function Hero() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors"
+            className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors font-heading tracking-wide text-shadow-sm"
           >
             View My Work
           </motion.button>

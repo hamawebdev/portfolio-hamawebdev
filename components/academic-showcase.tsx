@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Code, Book, Award, Trophy, Microscope, Github } from 'lucide-react'
+import { SectionTitle } from './ui/section-title'
 
 const achievements = [
   {
@@ -24,8 +25,8 @@ const achievements = [
   },
   {
     id: 4,
-    title: 'Research Assistant',
-    description: 'Assisted in cutting-edge research on Ai and deep learning',
+    title: "Coding Competition Winner",
+    description: "Achieved 5th place in the Algeria Coding Master Competition",
     icon: <Microscope className="w-6 h-6" />,
   },
   {
@@ -49,8 +50,11 @@ const handleDownload = () => {
 
 export function AcademicShowcase() {
   return (
-    <section id="achievements" className="py-20"> {/* Removed background color */}
-      <h2 className="text-4xl font-bold mb-10 text-center text-white">Achievements & Skills</h2>
+    <section id="achievements" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"> {/* Removed background color */}
+      <SectionTitle
+        title="Achievements & Skills"
+        titleGradient="purple-pink"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {achievements.map((achievement, index) => (
           <motion.div
@@ -79,7 +83,7 @@ export function AcademicShowcase() {
         <p className="text-lg text-gray-300 mb-6">
           As a passionate Computer Science student and budding freelancer, I'm constantly pushing the boundaries of what's possible in tech. My academic excellence, combined with hands-on project experience, positions me uniquely in the world of software development.
         </p>
-        
+
 
         <motion.button
           whileHover={{ scale: 1.05 }}
@@ -89,7 +93,7 @@ export function AcademicShowcase() {
         >
          Download Resume
         </motion.button>
-        
+
       </motion.div>
     </section>
   )

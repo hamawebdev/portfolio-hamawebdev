@@ -1,19 +1,20 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Code2, 
-  Box, 
-  Database, 
-  Cloud, 
-  Layout, 
-  Terminal, 
-  GitBranch, 
-  Server, 
-  Cpu, 
-  Globe, 
-  ShieldCheck, 
+import {
+  Code2,
+  Box,
+  Database,
+  Cloud,
+  Layout,
+  Terminal,
+  GitBranch,
+  Server,
+  Cpu,
+  Globe,
+  ShieldCheck,
   Boxes
 } from 'lucide-react';
+import { SectionTitle } from './ui/section-title';
 
 const skills = [
   {
@@ -60,7 +61,7 @@ const skills = [
 
 const SkillCard = ({ category, description, tools, gradient, isSelected, onClick }) => {
   const Icons = { Code2, Box, Database, Cloud, Layout, Terminal, GitBranch, Server, Cpu, Globe, ShieldCheck, Boxes };
-  
+
   return (
     <motion.div
       onClick={onClick}
@@ -72,14 +73,14 @@ const SkillCard = ({ category, description, tools, gradient, isSelected, onClick
     >
       {/* Gradient border */}
       <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-20 group-hover:opacity-30 transition-opacity`} />
-      
+
       {/* Content */}
       <div className="relative bg-slate-900/90 backdrop-blur-xl rounded-[22px] p-6 h-full">
         <h3 className={`text-2xl font-bold bg-gradient-to-r ${gradient} bg-clip-text text-transparent mb-2`}>
           {category}
         </h3>
         <p className="text-slate-400 text-sm mb-6">{description}</p>
-        
+
         <div className="space-y-4">
           {tools.map((tool) => {
             const IconComponent = tool.icon;
@@ -121,20 +122,14 @@ export function Skills() {
   return (
     <section className="py-32 px-4 overflow-hidden"> {/* Removed bg-[#0A0A0F] */}
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-20"
-        >
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-            Tech Stack
-          </h2>
-          <p className="text-slate-400 max-w-2xl mx-auto text-lg font-light">
-            A curated collection of modern technologies I use to build powerful digital experiences
-          </p>
-        </motion.div>
+        <SectionTitle
+          title="Tech Stack"
+          subtitle="A curated collection of modern technologies I use to build powerful digital experiences"
+          titleGradient="white-slate"
+          subtitleClassName="text-slate-400 font-light"
+        />
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4"
           layout
         >
@@ -150,7 +145,7 @@ export function Skills() {
           ))}
         </motion.div>
 
-        <motion.p 
+        <motion.p
           className="text-center mt-12 text-slate-500 text-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

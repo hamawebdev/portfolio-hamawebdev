@@ -37,7 +37,7 @@ export function Hero() {
               1000,
               'Backend Developer',
               1000,
-               'Ai Automation Developer',
+               'Ai Developer',
               1000,
             ]}
             wrapper="span"
@@ -57,15 +57,26 @@ export function Hero() {
             <Linkedin className="w-8 h-8 text-gray-300 hover:text-blue-500 transition-colors" />
           </Link>
         </motion.div>
-        <Link href="#projects">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors font-heading tracking-wide text-shadow-sm"
-          >
-            View My Work
-          </motion.button>
-        </Link>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link href="#projects">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition-colors font-heading tracking-wide text-shadow-sm w-full sm:w-auto"
+            >
+              View My Work
+            </motion.button>
+          </Link>
+          <Link href="#contact">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-transparent border-2 border-blue-500 text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300 font-heading tracking-wide w-full sm:w-auto"
+            >
+              Discuss Your Project
+            </motion.button>
+          </Link>
+        </div>
       </div>
     </section>
   )

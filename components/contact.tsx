@@ -16,8 +16,8 @@ type FormField = {
 export function Contact() {
   // Initialize EmailJS
   useEffect(() => {
-    // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
-    emailjs.init('YOUR_PUBLIC_KEY')
+    // Initialize with your public key
+    emailjs.init('4nZmi-2QsD_4TvePR')
   }, [])
 
   // Form state
@@ -99,10 +99,10 @@ export function Contact() {
     try {
       // Send email using EmailJS
       await emailjs.sendForm(
-        'service_hamawebdev', // Replace with your actual EmailJS service ID
-        'template_contact_form', // Replace with your actual EmailJS template ID
+        'service_v4gmng8', // Your EmailJS service ID
+        'template_knq5mkh', // Your EmailJS template ID
         formRef.current!,
-        'YOUR_USER_ID' // Replace with your actual EmailJS user ID
+        '4nZmi-2QsD_4TvePR' // Your EmailJS public key
       )
 
       // Success
@@ -128,7 +128,7 @@ export function Contact() {
     <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <SectionTitle
         title="Get In Touch"
-        subtitle="Have a project in mind or want to collaborate? Send me a message!"
+        subtitle="Ready to discuss your project? I'm here to help turn your ideas into reality!"
         titleGradient="cyan-blue"
       />
 
@@ -184,11 +184,20 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg border border-gray-700">
-            <h4 className="text-xl font-semibold mb-4 font-subheading text-white">Response Time</h4>
-            <p className="text-gray-300 font-body">
-              I typically respond to all inquiries within 24-48 hours. For urgent matters, please mention it in your message.
-            </p>
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg border border-gray-700">
+              <h4 className="text-xl font-semibold mb-4 font-subheading text-white">Response Time</h4>
+              <p className="text-gray-300 font-body">
+                I typically respond to all inquiries within 24-48 hours. For urgent matters, please mention it in your message.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-900 to-blue-800 p-6 rounded-lg shadow-lg border border-blue-700">
+              <h4 className="text-xl font-semibold mb-4 font-subheading text-white">Project Consultation</h4>
+              <p className="text-blue-100 font-body">
+                Have a project in mind? I offer free initial consultations to discuss your requirements, timeline, and budget. Let's create something amazing together!
+              </p>
+            </div>
           </div>
         </motion.div>
 

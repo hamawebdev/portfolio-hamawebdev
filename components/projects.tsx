@@ -10,33 +10,15 @@ import { SectionTitle } from './ui/section-title'
 const projects = [
   {
     id: 1,
-    title: 'Infinity Club Site',
-    description: 'The Infinity Club Site is a web application developed to provide a seamless experience for club members and visitors.',
+    title: 'Barber Shop',
+    description: 'A website for a barber shop that allows customers to book appointments and view the shop\'s services.',
     image: '/preview1.png',
-    previewUrl: 'https://infinity-club-bba.vercel.app/',
-    githubUrl: 'https://github.com/hamawebdev/infinity-club-site',
-    tags: ['laravel', 'Next.js', 'Tailwind CSS']
+    previewUrl: 'https://test-barber.vercel.app/',
+    githubUrl: 'https://github.com/hamawebdev/test-barber',
+    tags: ['Supabase', 'React', 'Tailwind CSS']
   },
   {
     id: 2,
-    title: 'Flutter Bootcamp Registration',
-    description: 'Impressive registration forum for Flutter Bootcamp with a clean and intuitive interface.',
-    image: '/preview6.png',
-    previewUrl: 'https://flutter-bootcamp-infinity.vercel.app/',
-    githubUrl: 'https://github.com/hamawebdev/registeration-forum',
-    tags: ['React', 'Django']
-  },
-  {
-    id: 3,
-    title: 'E-commerce Website',
-    description: 'A modern e-commerce website with product listings, cart functionality, and checkout process.',
-    image: '/preview5.png',
-    previewUrl: 'https://my-ecom-start.vercel.app/',
-    githubUrl: 'https://github.com/hamawebdev/my-ecom-start',
-    tags: ['Nextjs','Stripe', 'Laravel']
-  },
-  {
-    id: 4,
     title: 'ClubPulse',
     description: 'A platform to connect university clubs with university administration for easy organization of events and activities.',
     image: '/preview4.png',
@@ -45,7 +27,7 @@ const projects = [
     tags: ['React', 'Supabase', 'Tailwind CSS']
   },
   {
-    id: 5,
+    id: 3,
     title: 'Consin',
     description: 'Platform to connect startups with university incubators, facilitating innovation and entrepreneurship.',
     image: '/preview8.png',
@@ -54,32 +36,15 @@ const projects = [
     tags: ['React', 'Laravel', 'Material UI']
   },
   {
-    id: 6,
+    id: 4,
     title: 'NexSoft Solutions',
     description: 'Agency showcase website highlighting services, portfolio, and team members of a digital agency.',
     image: '/preview7.png',
     previewUrl: 'https://nexsoftsolutions.vercel.app/',
     githubUrl: 'https://github.com/hamawebdev/agency-showcase',
     tags: ['Next.js', 'Framer Motion', 'Tailwind CSS']
-  },
-  {
-    id: 7,
-    title: 'Brainwave Site',
-    description: 'The most impressive websites in the world use 3D graphics and animations to bring their content to life.',
-    image: '/preview2.png',
-    previewUrl: 'https://jsm-brainwave.com/',
-    githubUrl: 'https://github.com/hamawebdev/brainwave',
-    tags: ['React', 'Three.js', 'GSAP']
-  },
-  {
-    id: 8,
-    title: 'iPhone 15 Pro site',
-    description: 'Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.',
-    image: '/preview3.png',
-    previewUrl: 'https://iphone-doc.vercel.app/',
-    githubUrl: 'https://github.com/hamawebdev/iphone',
-    tags: ['React', 'Three.js', 'GSAP']
-  },
+  }
+ 
 ]
 
 export function Projects() {

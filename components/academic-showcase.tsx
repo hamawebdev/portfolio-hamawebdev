@@ -85,7 +85,7 @@ const achievements: AchievementType[] = [
   {
     id: 4,
     title: "Coding Competition Winner",
-    description: "Achieved 5th place in the Algeria Coding Master Competition",
+    description: "Achieved 1st place in the Algeria Coding & AI Competition",
     icon: <Microscope className="w-6 h-6" />,
     stats: { value: 5, label: 'Rank' },
   },

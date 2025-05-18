@@ -108,7 +108,7 @@ const achievements: AchievementType[] = [
 
 
 const handleDownload = () => {
-  window.open("https://drive.google.com/file/d/13iU9OH9Yc9Rmh2SnIxyd1vJ-KfXKwcwj/view?usp=sharing");
+  window.open("https://drive.google.com/file/d/1rUgi_MCIfyN8ZkWWGR6zo2AR79L-dze9/view?usp=sharing");
 };
 
 // Achievement card component
